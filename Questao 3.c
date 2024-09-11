@@ -12,7 +12,7 @@ int busca_binaria(int contas[], int tamanho, int conta_procurada, int *comparaco
         int meio = (esquerda + direita) / 2;
 
         if (contas[meio] == conta_procurada) {
-            return meio; // Conta encontrada
+            return meio;
         } else if (contas[meio] < conta_procurada) {
             esquerda = meio + 1;
         } else {
@@ -20,16 +20,15 @@ int busca_binaria(int contas[], int tamanho, int conta_procurada, int *comparaco
         }
     }
 
-    return -1; // Conta não encontrada
+    return -1;
 }
 
 int main() {
     int contas[NUM_CONTAS];
     int conta_procurada, comparacoes;
 
-    // Inicializa o vetor de contas com números de conta em ordem crescente
     for (int i = 0; i < NUM_CONTAS; i++) {
-        contas[i] = i + 1; // Exemplo: contas de 1 a 100
+        contas[i] = i + 1;
     }
 
     printf("Digite o número da conta a ser procurada: ");
