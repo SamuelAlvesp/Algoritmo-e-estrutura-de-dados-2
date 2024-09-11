@@ -10,7 +10,7 @@ int busca_binaria(int arr[], int tamanho, int elemento) {
         int meio = (esquerda + direita) / 2;
 
         if (arr[meio] == elemento) {
-            return meio; // Elemento encontrado
+            return meio; 
         } else if (arr[meio] < elemento) {
             esquerda = meio + 1;
         } else {
@@ -18,7 +18,7 @@ int busca_binaria(int arr[], int tamanho, int elemento) {
         }
     }
 
-    return -1; // Elemento não encontrado
+    return -1; 
 }
 
 int main() {
